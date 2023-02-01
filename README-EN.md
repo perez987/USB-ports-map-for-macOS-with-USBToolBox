@@ -35,7 +35,7 @@ In this phase you need a type 2 USB device and a type 3 USB device. I have used 
 **Letter S** to choose the ports and build the kext
 
 * In the list, each port you plugged a device into has the device associated with it. In addition to those who already had one connected (those in green)
-* Here you can give a name to the ports that you are going to choose, for this you write c:x:name where x is the number of the port and name is the name that you want to give it (it can be several words)
+* Here you can give a name to the ports that you are going to choose, for this you write `c:x:name` where x is the number of the port and name is the name that you want to give it (it can be several words)
 * It is time to make the selection. The most comfortable is to use N to deselect all ports and then write the numerical list of those chosen in the way 1,2,3,4,5 without exceeding 15 ports.
 * At the end, the list shows which are the 15 ports chosen and the comment that we have written in each of them.
 
