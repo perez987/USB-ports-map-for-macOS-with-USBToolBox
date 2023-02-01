@@ -1,4 +1,4 @@
-## Mapa de puertos USB para macOS con USBToolBox desde Windows
+# Mapa de puertos USB para macOS con USBToolBox desde Windows
 
 ### Resumen
 
