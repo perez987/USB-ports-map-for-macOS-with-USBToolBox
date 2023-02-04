@@ -1,5 +1,7 @@
 # USB ports map for macOS with USBToolBox from Windows
 
+[(Spanish version)](README-ES.md)
+
 ### Summary
 
 How to generate USB port map on Windows for use on macOS, which has a limit of 15 ports per USB controller, using [dhinakg](https://github.com/dhinakg)'s USBToolBox. This is currently the easiest method of generating the USB port map for macOS with the only downside being that you need a Windows system on the same machine.
