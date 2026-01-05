@@ -1,6 +1,24 @@
 # USB ports map for macOS with USBToolBox from Windows
 
-[(Spanish version)](README-ES.md)
+## Note about macOS Tahoe
+
+Apple has changed the name of the USB port properties in USBMap.kext files in macOS Tahoe. Where previously there was:
+
+![Pre-Tahoe](Images/USB-pretahoe.png)
+
+it has now changed to:
+
+![Tahoe](Images/USB-tahoe.png)
+
+You can have all four properties simultaneously so that the same ports map works in Tahoe and earlier macOS.
+
+![All](Images/USB-all.png)
+
+To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run `USBMapInjectorEdit.command`, drag a `USBMap.kext` or `USBPorts.kext` over the Terminal command and the changes will be applied.
+
+Note: Comment property is not part of Apple ports maps but it is useful information that Hackintool can show in the USB tab.
+
+---
 
 ### Summary
 
@@ -14,13 +32,13 @@ On the GitHub [site](https://github.com/USBToolBox) you have the tool for Window
 
 In the unzipped folder, run Windows.exe. A command window opens in which the entire process takes place.
 
-![ToolBox 1](toolbox1.png)
+![ToolBox 1](Images/toolbox1.png)
 
 **Letter C** to access the settings
  
 Here I only enable 2 options: Show Friendly Types (facilitates the reading of the detected ports) and Add Comments to Map (allows adding identifying comments to each port such as "rear blue USB3").
 
-![ToolBox 2](toolbox2.png)
+![ToolBox 2](Images/toolbox2.png)
 
 **Letter D** to show all the ports detected by the tool
  
@@ -41,13 +59,13 @@ In this phase you need a type 2 USB device and a type 3 USB device. I have used 
 * It is time to make the selection. The most comfortable is to use N to deselect all ports and then write the numerical list of those chosen in the way 1,2,3,4,5 without exceeding 15 ports.
 * At the end, the list shows which are the 15 ports chosen and the comment that we have written in each of them.
 
-![ToolBox 3](toolbox3.png)
+![ToolBox 3](Images/toolbox3.png)
 
 **Letter K** to generate UTBMap.kext
  
-This is the kext that macOS will use. It does not work by itself but must be accompanied by USBToolBox.kext downloaded from the same GitHub site. Both together in the OpenCore or Clover Kexts folder. In the config.plist file, USBToolBox.kext has to be before UTBMap.kext.
+This is the kext that macOS will use. It does not work by itself but must be accompanied by USBToolBox.kext downloaded from the same GitHub site. In the config.plist file, USBToolBox.kext has to be before UTBMap.kext.
 
-![ToolBox 4](toolbox4.png)
+**SMBIOS model**
 
-An additional advantage that this method has over USBMap.kext from [corpnewt](https://github.com/corpnewt) or USBPorts.kext from [Hackintool](https://github.com/benbaker76/Hackintool) is that it does not depend on the SMBIOS model, in these you have to modify the Info.plist file of the kext when changing Mac models.
+An additional advantage that this method has over USBMap.kext from [corpnewt](https://github.com/corpnewt) or USBPorts.kext from [Hackintool](https://github.com/benbaker76/Hackintool) is that it does not depend on the SMBIOS model (you have to modify the Info.plist file of the kext when changing Mac model).
 
