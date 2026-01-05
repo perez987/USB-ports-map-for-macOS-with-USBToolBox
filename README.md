@@ -14,7 +14,7 @@ You can have all four properties simultaneously so that the same ports map works
 
 ![All](Images/USB-all.png)
 
-To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run `USBMapInjectorEdit.command`, drag a `USBMap.kext` or `USBPorts.kext` over the Terminal command and the changes will be applied.
+To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run `USBMapInjectorEdit.command`, drag a `USBMap.kext` or `USBPorts.kext` over the Terminal window and the changes will be applied.
 
 Note: Comment property is not part of Apple ports maps but it is useful information that Hackintool can show in the USB tab.
 
