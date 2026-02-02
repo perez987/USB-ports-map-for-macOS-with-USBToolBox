@@ -18,7 +18,7 @@ To make the change, you have the option of doing it manually or using *corpnewt'
 
 If `USBMapInjectorEdit.command` doesn't display the "Update Keys for macOS 26 (Tahoe)" option, it's because it detects that the kext already has the updated properties for Tahoe or it’s in a wrong format.
 
-Note: Comment property is not part of Apple ports maps but it is useful information that Hackintool can show in the USB tab.
+Note: Comments are not part of Apple ports maps but it is useful information that Hackintool can show in the USB tab, so I set them when I create UTBMap in windows for convenience.
 
 ---
 
