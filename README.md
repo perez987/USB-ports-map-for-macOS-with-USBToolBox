@@ -14,7 +14,9 @@ You can have all four properties simultaneously so that the same ports map works
 
 ![All](Images/USB-all.png)
 
-To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run `USBMapInjectorEdit.command`, drag a `USBMap.kext` or `USBPorts.kext` over the Terminal window and the changes will be applied.
+To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run `USBMapInjectorEdit.command`, drag a `USBMap.kext` or `USBPorts.kext` over the Terminal window, select `U. Update Keys for macOS 26 (Tahoe)`. Changes are done in-place, and happen immediately without user notification. Make sure you keep backups.
+
+If `USBMapInjectorEdit.command` doesn't display the "Update Keys for macOS 26 (Tahoe)" option, it's because it detects that the kext already has the updated properties for Tahoe or it’s in a wrong format.
 
 Note: Comment property is not part of Apple ports maps but it is useful information that Hackintool can show in the USB tab.
 
