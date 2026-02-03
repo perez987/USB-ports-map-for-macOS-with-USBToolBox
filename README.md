@@ -4,15 +4,23 @@
 
 Apple has changed the name of the USB port properties in USBMap.kext files in macOS Tahoe. Where previously there was:
 
-![Pre-Tahoe](Images/USB-pretahoe.png)
+| Pre-Tahoe |
+|:----|
+| ![title](Images/USB-pretahoe.png) |
 
 it has now changed to:
 
-![Tahoe](Images/USB-tahoe.png)
+
+| Tahoe |
+|:----|
+| ![title](Images/USB-tahoe.png) |
 
 You can have all four properties simultaneously so that the same ports map works in Tahoe and earlier macOS.
 
-![All](Images/USB-all.png)
+
+| Pre-Tahoe and Tahoe |
+|:----|
+| ![title](Images/USB-all.png) |
 
 To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run `USBMapInjectorEdit.command`, drag a `USBMap.kext` or `USBPorts.kext` over the Terminal window, select `U. Update Keys for macOS 26 (Tahoe)`. Changes are done in-place, and happen immediately without user notification. Make sure you keep backups.
 
@@ -34,13 +42,18 @@ On the GitHub [site](https://github.com/USBToolBox) you have the tool for Window
 
 In the unzipped folder, run Windows.exe. A command window opens in which the entire process takes place.
 
-![ToolBox 1](Images/toolbox1.png)
+
+| ToolBox 1 |
+|:----|
+| ![title](Images/toolbox1.png) |
 
 **Letter C** to access the settings
  
 Here I only enable 2 options: Show Friendly Types (facilitates the reading of the detected ports) and Add Comments to Map (allows adding identifying comments to each port such as "rear blue USB3").
 
-![ToolBox 2](Images/toolbox2.png)
+| ToolBox 2 |
+|:----|
+| ![title](Images/toolbox2.png) |
 
 **Letter D** to show all the ports detected by the tool
  
@@ -61,7 +74,9 @@ In this phase you need a type 2 USB device and a type 3 USB device. I have used 
 * It is time to make the selection. The most comfortable is to use N to deselect all ports and then write the numerical list of those chosen in the way 1,2,3,4,5 without exceeding 15 ports.
 * At the end, the list shows which are the 15 ports chosen and the comment that we have written in each of them.
 
-![ToolBox 3](Images/toolbox3.png)
+| ToolBox 3 |
+|:----|
+| ![title](Images/toolbox3.png) |
 
 **Letter K** to generate UTBMap.kext
  
